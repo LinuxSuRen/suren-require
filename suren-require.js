@@ -17,6 +17,8 @@ if(typeof define !== 'undefined') {
         var sr = {
             load: function (name, req, onLoad, config) {
                 console.log('hello from surenpi.com suren-require');
+
+                return 'load';
             },
             write: {}
         };
