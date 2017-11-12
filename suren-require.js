@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var sRequire = (function () {
     var suren_require = function () {
         console.log(arguments);
