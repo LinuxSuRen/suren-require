@@ -18,6 +18,8 @@ if(typeof define !== 'undefined') {
             load: function (name, req, onLoad, config) {
                 console.log('hello from surenpi.com suren-require');
 
+                onLoad();
+
                 return 'load';
             },
             finishLoad: function (name, strip, content, onLoad) {
