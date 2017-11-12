@@ -1,7 +1,3 @@
-#!/usr/bin/env node
-
-console.log("hello from suren");
-
 var sRequire = (function () {
     var suren_require = function () {
         console.log(arguments);
@@ -12,4 +8,19 @@ var sRequire = (function () {
 
 if(typeof exports === 'object' && exports) {
     exports.suren_require = sRequire;
+}
+
+if(typeof define !== 'undefined') {
+    define('suren-require', ['module'], function (module) {
+        'use strict';
+
+        var sr = {
+            load: function (name, req, onLoad, config) {
+                console.log('hello from surenpi.com suren-require');
+            },
+            write: {}
+        };
+
+        return sr;
+    });
 }
