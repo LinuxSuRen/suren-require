@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+console.log("hello from suren");
+
 var sRequire = (function () {
     var suren_require = function () {
         console.log(arguments);
