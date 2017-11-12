@@ -20,6 +20,9 @@ if(typeof define !== 'undefined') {
 
                 return 'load';
             },
+            finishLoad: function (name, strip, content, onLoad) {
+                onLoad(content);
+            },
             write: {}
         };
 
